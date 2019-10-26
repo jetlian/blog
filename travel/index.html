@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>japan-travel-plan</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">2020元旦日本跨年9天行程：日本冬季之旅</h1>
+
+<div><pre><code class="language-none">计划时间：2019年12月28日 - 2020年1月5号
+行程人数：4-6人
+预计请假：4天（12月30号、31号，1月2号、3号）
+主要目的地：大阪-东京-北海道
+机票价格：
+天津&lt;-&gt;大阪往返 ￥1827
+去程：天津滨海国际（17:20）- 大阪关西国际（21:00)
+返程：大阪关西国际（16:30) - 天津滨海国际(20:25)</code></pre></div>
+
+<h2 id="toc_1">DAY1 北京-&gt;天津-&gt;大阪</h2>
+
+<p>📆 日期：2019年10月28日</p>
+
+<p>🗓 行程：</p>
+
+<ol>
+<li>北京 - 天津</li>
+<li>天津 - 大阪</li>
+<li>大阪住一晚，晚上逛吃、购物等</li>
+</ol>
+
+<p>✈️ 飞机：天津滨海国际（17:20） - 大阪关西国际（21:00) </p>
+
+<p>🍱 美食：</p>
+
+<p>🏨 酒店：（住大阪）</p>
+
+<h2 id="toc_2">DAY2 大阪-&gt;东京</h2>
+
+<p>📆 日期：2019年10月29日</p>
+
+<p>🗓 行程：</p>
+
+<ol>
+<li>9点大阪出发到东京，约2小时30分，在东京找酒店入住</li>
+<li>12点吃中午饭</li>
+<li>14点换上和服 👘 逛浅草寺</li>
+<li>傍晚到晴空塔对面31层景观餐厅吃饭，看夜景（<strong>续提前预订</strong>）</li>
+<li>晚上自由活动</li>
+</ol>
+
+<p>🚅 东海道新干线：</p>
+
+<p>⛩ 景点：浅草寺（东京必访景点）、东京夜景</p>
+
+<p>🍱 美食：一兰拉面</p>
+
+<p>🏨 酒店：（住大阪）</p>
+
+<h2 id="toc_3">DAY3 东京（富士山）</h2>
+
+<p>📆 日期：2019年10月30日</p>
+
+<p>🗓 行程：</p>
+
+<ol>
+<li>8点 新宿车站，车程2个小时</li>
+<li>10点 搭乘河口湖游览船，在湖中央欣赏富士山 🗻</li>
+<li>搭乘缆车上“天上山公园”，不一样的角度，近距离欣赏富士山</li>
+<li>下山逛“河口湖自然生活馆”，有很多富士山周边商品</li>
+<li>返回东京，新宿逛街</li>
+</ol>
+
+<p>🚌 高速巴士：新宿-富士河口湖（<strong>可提前预订车票</strong>）</p>
+
+<p>⛩ 景点：富士山</p>
+
+<p>🍱 美食：不动茶屋、和牛烧肉</p>
+
+<p>🏨 酒店：（住东京）</p>
+
+<h2 id="toc_4">DAY4 东京-&gt;北海道（函馆）</h2>
+
+<p>📆 日期：2019年10月31日</p>
+
+<p>🗓 行程：</p>
+
+<ol>
+<li>早上8点出发，从东京到函馆</li>
+<li>中午午餐，找酒店入住</li>
+<li>上函馆山看最美夜景</li>
+<li>晚上去函馆朝市吃海鲜</li>
+</ol>
+
+<p>🚅 北海道新干线：东京-新函馆北斗（4个小时）</p>
+
+<p>⛩ 景点：八幡坂、函馆山夜景</p>
+
+<p>🍱 美食：函馆朝市吃海鲜</p>
+
+<p>🏨 酒店：（住函馆）</p>
+
+<h2 id="toc_5">DAY5 北海道星野度假村</h2>
+
+<p>📆 日期：2020年1月1日</p>
+
+<p>🗓 行程：</p>
+
+<ol>
+<li>早上8点出发，函馆-札幌（3个半小时）</li>
+<li>札幌-星野度假村（1个小时20分钟）</li>
+<li>星野度假村吃午餐，办入住</li>
+<li>下午在星野度假村玩雪上摩托车、香蕉船等项目</li>
+<li>晚餐在森林餐厅</li>
+<li>爱丝冰城，东京限定的冰雪小镇，体验冰雪的世界</li>
+</ol>
+
+<p>🚊 铁路线：函馆-札幌</p>
+
+<p>⛩ 景点：雪上游乐项目、森林餐厅、冰雪小镇</p>
+
+<p>🍱 美食：</p>
+
+<p>🏨 酒店：（住星野度假村）</p>
+
+<h2 id="toc_6">DAY6 星野度假村-札幌</h2>
+
+<p>📆 日期：2020年1月2日</p>
+
+<p>🗓 行程：</p>
+
+<ol>
+<li>上午主要项目滑雪 ⛷</li>
+<li>下午微笑海滩</li>
+<li>最后去札幌</li>
+</ol>
+
+<p>⛩ 景点：滑雪、微笑海滩（日本最大的室内人造浪游泳池）</p>
+
+<p>🍱 美食：汤咖喱</p>
+
+<p>🏨 酒店：（住札幌）</p>
+
+<h2 id="toc_7">DAY7 札幌</h2>
+
+<p>📆 日期：2020年1月3日</p>
+
+<p>🗓 行程：</p>
+
+<ol>
+<li>上午北海道神宫</li>
+<li>下午小樽</li>
+<li>晚上泡温泉</li>
+</ol>
+
+<p>⛩ 景点：北海道神宫、小樽</p>
+
+<p>🏨 酒店：（住札幌）</p>
+
+<h2 id="toc_8">DAY8 札幌-东京</h2>
+
+<p>📆 日期：2020年1月4日</p>
+
+<p>🗓 行程：</p>
+
+<ol>
+<li>札幌-函馆（约3小时30分钟，在札幌与函馆之间有2趟特快列车）</li>
+<li>函馆北斗站-东京（4小时）</li>
+<li>下午镰仓高校打卡（或迪士尼）</li>
+</ol>
+
+<p>⛩ 景点：镰仓高校</p>
+
+<p>🛍 购物：新宿车站</p>
+
+<p>🏨 酒店：（住东京）</p>
+
+<h2 id="toc_9">DAY9 东京-大阪</h2>
+
+<p>📆 日期：2020年1月5日</p>
+
+<p>🗓 行程：</p>
+
+<ol>
+<li>早上8点出发，东京-大阪（2个半小时）</li>
+<li>大阪购物</li>
+<li>下午2点去机场，16:30的飞机回程</li>
+</ol>
+
+<p>🛍 购物：大阪百货</p>
+
+<hr>
+
+<h3 id="toc_10">tips:</h3>
+
+<ol>
+<li>住宿预订APP：Agoda</li>
+<li>新干线 JR（Japan Rall）pass：1990元（连续7天）
+ 备注：淘宝购购票，日本机场兑换
+ https://traveldetail.fliggy.com/item.htm?spm=a230r.1.14.1.1ea91fd59LPOq8&amp;id=528993692839&amp;ns=1&amp;abbucket=19</li>
+<li>北海道机场：新前岁机场</li>
+<li>买左边的座位，天气好可以看到富士山。</li>
+<li>东海道新干线连接东京、京都、名古屋及大阪</li>
+</ol>
+
+<h3 id="toc_11">交通</h3>
+
+<p>交通导览
+http://www.sapporo.travel/learn/transportation/hokkaido/?lang=cn</p>
+
+<h3 id="toc_12">美食:</h3>
+
+<ol>
+<li>一兰拉面</li>
+<li>一風堂（拉面） Ippudo</li>
+<li>和牛</li>
+</ol>
+
+<h3 id="toc_13">景点:</h3>
+
+<ol>
+<li>浅草寺（东京）</li>
+<li>环球影城（大阪）</li>
+</ol>
+
+<h3 id="toc_14">购物：</h3>
+
+<p>1 松本清
+2 药妆
+3 大阪百货</p>
+
+<p>日本Vlog视频
+日本冬季14日遊 EP1: 北海道-札幌&amp;小樽 | JAPAN VLOG 2018 | YUICHIA
+https://www.youtube.com/watch?v=PHgQvOgG_xk</p>
+
+
+
+
+</body>
+
+</html>
