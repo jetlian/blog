@@ -29,3 +29,7 @@
 ## 日本Vlog视频
 [日本冬季14日遊 EP1: 北海道-札幌&小樽 | JAPAN VLOG 2018 | YUICHIA](https://www.youtube.com/watch?v=PHgQvOgG_xk)
 
+---
+
+### 返回
+- [规划行程](./japan-travel-plan.html)
